@@ -7,10 +7,9 @@ services:
     ports:
      - "1111:1111"
     volumes:
-     - :/usr/share/nginx/html
+     - - ./config.yaml:/config.yaml
     environment:
-     - NGINX_HOST=bloomsky.servicess.alin.be
-     - NGINX_PORT=80
+     - bloomskyAccessToken=tocken
     labels:
      - traefik.port=80
      - traefik.frontend.rule=Host:bloomsky.services.alin.be
