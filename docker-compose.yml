@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  doc:
+    image: patrickalin/docker-bloomsky
+    container_name: bloomsky
+    ports:
+     - "1111:1111"
+    volumes:
+     - :/usr/share/nginx/html
+    environment:
+     - NGINX_HOST=bloomsky.servicess.alin.be
+     - NGINX_PORT=80
+    labels:
+     - traefik.port=80
+     - traefik.frontend.rule=Host:bloomsky.services.alin.be
+     - traefik.frontend.entryPoints=http,https
+     - traefik.backend=bloomsky
+    networks:
+     - web
+
+networks:
+  web:
+    external:
+      name: traefik_webgateway
