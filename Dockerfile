@@ -1,4 +1,4 @@
-FROM alpine:3.6
+FROM golang:1.8.3
 RUN apk update
 RUN apk add ca-certificates
 RUN update-ca-certificates
