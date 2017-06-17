@@ -6,24 +6,30 @@
 
 A simple Go client for the BloomSky API.
 
-It's possible to show informations in the console or in a embedded web server.
-It's also possible to export datas to Time Series Database InfluxData.
+* It's possible to show informations in the console or in a embedded web server.
+* It's also possible to export datas to Time Series Database InfluxData.
 
 ## 1 Getting Started
 
 ### Prerequisites
 
-* BloomSky API key (get it here: https://dashboard.bloomsky.com/)
+* BloomSky API key (get it here: [dashboard.bloomsky.com](https://dashboard.bloomsky.com/) )
 
-### Execution standalone
+### Execution without config.yaml
 
     docker run -d  --name=bloomsky -e bloomskyAccessToken=ToBECompleted patrickalin/docker-bloomsky
 
 * Don't forget !!!! : You have to change the API Key
 
+### Execution with config.yaml
+
+   docker cp nest:/go/src/GoNestThermostatAPIRest/config.yaml ./config.yaml
+
+   docker run -d  --name=nest -v $(PWD)/config.yaml:/config.yaml patrickalin/nestthermostat
+
 ### Execution from docker-compose
 
-    [link to docker-cmpose.yaml](https://github.com/patrickalin/docker-bloomsky/blob/master/docker-compose.yml)
+[link to docker-cmpose.yaml](https://github.com/patrickalin/docker-bloomsky/blob/master/docker-compose.yml)
 
 * Don't forget !!!! : You have to change the API
 
@@ -31,7 +37,7 @@ It's also possible to export datas to Time Series Database InfluxData.
 
 ### Example : result in the webserver
 
-By default : http://localhost:1111/
+By default : <http://localhost:1111/>
 
 ![Bloosmky webserver](https://github.com/patrickalin/bloomsky-client-go-source/blob/master/img/webserver.png)
 
@@ -67,6 +73,7 @@ By default : http://localhost:1111/
 
 ![InfluxData Image ](https://github.com/patrickalin/bloomsky-client-go-source/blob/master/img/InfluxDB.png)
 
-## 3 Full project
+## 3 Github : link project
 
-https://github.com/patrickalin/bloomsky-client-go
+[Github build docker](https://github.com/patrickalin/bloomsky-client-go)
+[Github project release](https://github.com/patrickalin/bloomsky-client-go)
