@@ -1,4 +1,4 @@
-version: '3'
+version: '3.2'
 
 services:
   bloomsky:
@@ -9,9 +9,9 @@ services:
     volumes:
      - ./config.yaml:/config.yaml
     environment:
-     - bloomskyAccessToken="yourtocken"
+     - bloomskyAccessToken=${bloomskyAccessToken}
     labels:
-     - traefik.port=80
+     - traefik.port=1111
      - traefik.frontend.rule=Host:bloomsky.services.alin.be
      - traefik.frontend.entryPoints=http,https
      - traefik.backend=bloomsky
