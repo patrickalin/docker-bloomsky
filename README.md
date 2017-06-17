@@ -23,13 +23,15 @@ A simple Go client for the BloomSky API.
 
 ### Execution with config.yaml
 
-   docker cp nest:/go/src/GoNestThermostatAPIRest/config.yaml ./config.yaml
+    docker cp bloomsky:/config.yaml ./config.yaml
 
-   docker run -d  --name=nest -v $(PWD)/config.yaml:/config.yaml patrickalin/nestthermostat
+    docker run -d  --name=bloomsky -v $(PWD)/config.yaml:/config.yaml patrickalin/nestthermostat
 
 ### Execution from docker-compose
 
-[link to docker-cmpose.yaml](https://github.com/patrickalin/docker-bloomsky/blob/master/docker-compose.yml)
+[link to docker-compose.yaml](https://github.com/patrickalin/docker-bloomsky/blob/master/docker-compose.yml)
+
+    docker-compose up -d
 
 * Don't forget !!!! : You have to change the API
 
@@ -75,5 +77,5 @@ By default : <http://localhost:1111/>
 
 ## 3 Github : link project
 
-[Github build docker](https://github.com/patrickalin/bloomsky-client-go)
-[Github project release](https://github.com/patrickalin/bloomsky-client-go)
+* [Github project release](https://github.com/patrickalin/bloomsky-client-go)
+* [Github build docker](https://github.com/patrickalin/docker-bloomsky)
