@@ -41,7 +41,7 @@ A simple Go client for the BloomSky API.
 
 By default : `http://localhost:1111/`
 
-![Bloosmky webserver](https://github.com/patrickalin/bloomsky-client-go-source/blob/master/img/webserver.png)
+![Bloosmky webserver](https://raw.githubusercontent.com/patrickalin/bloomsky-client-go/master/img/webserver.png)
 
 ### Example : result in the standard console
 
@@ -73,7 +73,7 @@ By default : `http://localhost:1111/`
 
 ### Example : result in a influxData
 
-![InfluxData Image ](https://github.com/patrickalin/bloomsky-client-go-source/blob/master/img/InfluxDB.png)
+![InfluxData Image ](https://raw.githubusercontent.com/patrickalin/bloomsky-client-go/master/img/InfluxDB.png)
 
 ## 3 Github : link project
 
