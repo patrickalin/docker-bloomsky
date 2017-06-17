@@ -39,11 +39,11 @@ A simple Go client for the BloomSky API.
 
 ### Example : result in the webserver
 
-By default : <http://localhost:1111/>
+By default : `http://localhost:1111/`
 
 ![Bloosmky webserver](https://github.com/patrickalin/bloomsky-client-go-source/blob/master/img/webserver.png)
 
-### Example : result in the standard console.
+### Example : result in the standard console
 
     Bloomsky
     --------
