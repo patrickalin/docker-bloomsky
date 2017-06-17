@@ -1,15 +1,15 @@
 version: '3'
 
 services:
-  doc:
+  bloomsky:
     image: patrickalin/docker-bloomsky
     container_name: bloomsky
     ports:
      - "1111:1111"
     volumes:
-     - - ./config.yaml:/config.yaml
+     - ./config.yaml:/config.yaml
     environment:
-     - bloomskyAccessToken=tocken
+     - bloomskyAccessToken="yourtocken"
     labels:
      - traefik.port=80
      - traefik.frontend.rule=Host:bloomsky.services.alin.be
