@@ -1,6 +1,7 @@
 # Docker-bloomsky
-
+[![Docker Pulls](https://img.shields.io/docker/pulls/patrickalin/docker-bloomsky.svg)](https://hub.docker.com/r/patrickalin/docker-bloomsky/)
 [![](https://images.microbadger.com/badges/image/patrickalin/docker-bloomsky.svg)](https://microbadger.com/images/patrickalin/docker-bloomsky "Get your own image badge on microbadger.com")
+[![Codefresh build status]( https://g.codefresh.io/api/badges/build?repoOwner=patrickalin&repoName=docker-bloomsky&branch=master&pipelineName=docker-bloomsky&accountName=patrickalin&type=cf-1)]( https://g.codefresh.io/repositories/patrickalin/docker-bloomsky/builds?filter=trigger:build;branch:master;service:59455d48bbd89a0001726fdf~docker-bloomsky)
 [![](https://images.microbadger.com/badges/version/patrickalin/docker-bloomsky.svg)](https://microbadger.com/images/patrickalin/docker-bloomsky "Get your own version badge on microbadger.com")
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
