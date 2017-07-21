@@ -6,14 +6,15 @@ services:
     container_name: bloomsky
     ports:
      - "1111:1111"
+     - "1112:1112"
     volumes:
      - ./config.yaml:/config.yaml
     environment:
      - bloomskyAccessToken=${bloomskyAccessToken}
     labels:
-     - traefik.port=1111
+     - traefik.port=1112
      - traefik.frontend.rule=Host:bloomsky.services.alin.be
-     - traefik.frontend.entryPoints=http,https
+     - traefik.frontend.entryPoints=https,http
      - traefik.backend=bloomsky
     networks:
      - web
