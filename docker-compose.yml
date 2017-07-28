@@ -14,8 +14,9 @@ services:
     labels:
      - traefik.port=1112
      - traefik.frontend.rule=Host:bloomsky.services.alin.be
-     - traefik.frontend.entryPoints=https,http
+     - traefik.frontend.entryPoints=https
      - traefik.backend=bloomsky
+     - traefik.protocol=https
     networks:
      - web
 

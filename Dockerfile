@@ -1,5 +1,5 @@
 FROM ubuntu:17.10
-ARG version="v1.9"
+ARG version="v1.10"
 ARG urlrelease="https://github.com/patrickalin/bloomsky-client-go/releases/download"
 RUN apt-get update
 RUN apt-get -y  install wget
