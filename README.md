@@ -26,7 +26,7 @@ A simple Go client for the BloomSky API.
 
     docker cp bloomsky:/config.yaml ./config.yaml
 
-    docker run -d  --name=bloomsky -v $(PWD)/config.yaml:/config.yaml patrickalin/nestthermostat
+    docker run -d  --name=bloomsky -v $(pwd)/config.yaml:/config.yaml patrickalin/docker-bloomsky
 
 ### Execution from docker-compose
 
