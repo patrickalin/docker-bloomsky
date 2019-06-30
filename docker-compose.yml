@@ -1,4 +1,4 @@
-version: '3.2'
+version: '3.7'
 
 services:
   bloomsky:
@@ -16,9 +16,8 @@ services:
      - traefik.frontend.entryPoints=http,https
      - traefik.backend=bloomsky
     networks:
-     - web
+     - traefik-net
 
 networks:
-  web:
-    external:
-      name: traefik_webgateway
+  traefik-net:
+    external: true
